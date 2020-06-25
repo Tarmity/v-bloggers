@@ -11,45 +11,39 @@
   </head>
 
   <body>
-    <div class="grid-container">
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 cell">
-          <h1>Search Your video</h1>
-        </div>
+    <div class="top-bar">Search your video</div>
+    <div class="grid-x grid-padding-x">
+      <div class="large-4 cell">
+        <label>Latitude</label>
+        <input type="text" placeholder="Plug in your Latitude" />
       </div>
+              
+      <div class="large-4 cell">
+        <label>Longitude</label>
+        <input type="text" placeholder="Plug in your Longitude" />
+      </div>
+              
+      <div class="large-4 cell">
+        <label>Select Box</label>
+          <select>
+            <option value="5km">5km</option>
+            <option value="10km">10km</option>
+            <option value="20km">20km</option>
+          </select>
+      </div>
+    </div>
 
-      
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 cell">
-                <label>Latitude</label>
-                <input type="text" placeholder="Plug in your Latitude" />
-              </div>
-              <div class="large-4 cell">
-                <label>Longitude</label>
-                <input type="text" placeholder="Plug in your Longitude" />
-              </div>
-              <div class="grid-x grid-padding-x">
-                <div class="large-4 cell">
-                  <label>Select Box</label>
-                  <select>
-                    <option value="5km">5km</option>
-                    <option value="10km">10km</option>
-                    <option value="20km">20km</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-
-        <div class="large-4 medium-4 cell">
-          <h5>Submit here:</h5>
+    <div class="grid-x grid-padding-x">
+      <div class="large-4 medium-4 cell">
+        <h5>Submit here:</h5>
           <p>
             <a href="#" class="button">Submit</a><br/>
           </p>
-          
-        </div>
+      </div>
     </div>
 
-
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+  
   </body>
+  
   </html>
