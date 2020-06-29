@@ -12,6 +12,12 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNMu1kms7xIhha83sa5s9dbYeQE3ebSJ4&callback=initMap&libraries=&v=weekly"
+    defer
+  ></script>
+
 </head>
 
 <body>
@@ -60,6 +66,8 @@
       <p class="description">Video Description<p>
 
   </div>
+
+  <div id="map"></div>
 
   <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
     integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>

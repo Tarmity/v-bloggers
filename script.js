@@ -10,31 +10,6 @@ function showPosition(position) {
    $(".find-lat-lon-container").append("<p>" + "Latitude: " + lat + "<br>" + "Longitude: " + lon + "</p>");
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //When user inputs Geo location and request YouTube videos from that area.
 function getVideo() {
    $.ajax({
@@ -65,3 +40,25 @@ function getVideo() {
 }
 
 getVideo();
+function initMap() {
+  var myLatlng = {lat: -25.363, lng: 131.044};
+
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: myLatlng});
+
+  // Create the initial InfoWindow.
+  var infoWindow = new google.maps.InfoWindow(
+      {content: 'Click the map to get Lat/Lng!', position: myLatlng});
+  infoWindow.open(map);
+
+  // Configure the click listener.
+  map.addListener('click', function(mapsMouseEvent) {
+    // Close the current InfoWindow.
+    infoWindow.close();
+
+    // Create a new InfoWindow.
+    infoWindow = new google.maps.InfoWindow({position: mapsMouseEvent.latLng});
+    infoWindow.setContent(mapsMouseEvent.latLng.toString());
+    infoWindow.open(map);
+  });
+}
