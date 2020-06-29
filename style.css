@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+}
+
+.container {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.large-4 {
+    justify-content: center;
+    text-align: left;
+}
+
+.find-lat-lon-container {
+    margin: auto;
+    padding: 20px;
+    justify-content: center;
+}

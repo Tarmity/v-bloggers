@@ -1,49 +1,66 @@
 <!doctype html>
 
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-  </head>
 
-  <body>
-    <div class="top-bar">Search your video</div>
-    <div class="grid-x grid-padding-x">
-      <div class="large-4 cell">
-        <label>Latitude</label>
-        <input type="text" placeholder="Plug in your Latitude" />
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation for Sites</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+    integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <div class="top-bar">Search your video</div>
+  <div class="container">
+    <div class="input">
+      <div class="find-lat-lon-container">
+        <p>Click the button to get your coordinates.</p>
+        <button class="btn">Click here</button>
       </div>
-              
-      <div class="large-4 cell">
-        <label>Longitude</label>
-        <input type="text" placeholder="Plug in your Longitude" />
-      </div>
-              
-      <div class="large-4 cell">
-        <label>Select Box</label>
+
+      <div class="grid-x grid-padding-x">
+        <div class="large-4 cell">
+          <label>Latitude</label>
+          <input type="text" placeholder="Plug in your Latitude" />
+        </div>
+
+        <div class="large-4 cell">
+          <label>Longitude</label>
+          <input type="text" placeholder="Plug in your Longitude" />
+        </div>
+
+        <div class="large-4 cell">
+          <label>Select Box</label>
           <select>
             <option value="5km">5km</option>
             <option value="10km">10km</option>
             <option value="20km">20km</option>
           </select>
+        </div>
       </div>
-    </div>
 
-    <div class="grid-x grid-padding-x">
-      <div class="large-4 medium-4 cell">
-        <h5>Submit here:</h5>
+      <div class="grid-x grid-padding-x">
+        <div class="large-4 medium-4 cell">
+          <h5>Submit here:</h5>
           <p>
-            <a href="#" class="button">Submit</a><br/>
+            <a href="#" class="button">Submit</a><br />
           </p>
+        </div>
       </div>
     </div>
+    <div id="map"></div>
 
-    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
-  
-  </body>
-  
-  </html>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+    integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
