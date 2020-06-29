@@ -2,6 +2,14 @@ body {
     margin: 0;
 }
 
+.btn {
+    margin: auto;
+    padding: 10px;
+    background-color: lightseagreen;
+    color: white;
+    border-radius: 5px;
+}
+
 .container {
     margin: auto;
     width: 100%;
