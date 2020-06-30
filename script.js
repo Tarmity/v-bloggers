@@ -10,6 +10,8 @@ $(".btn").on("click", function getLocation() {
      const lat = position.coords.latitude;
      const lon = position.coords.longitude;
      $(".find-lat-lon-container").append("<p>" + "Latitude: " + lat + "<br>" + "Longitude: " + lon + "</p>");
+     $("#inputLat").val(lat);
+     $("#inputLon").val(lon);
   }
   
 
