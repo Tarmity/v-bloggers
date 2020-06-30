@@ -32,8 +32,8 @@ body {
 /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
        #map {
-        height: 50%;
-        width: 50%;
+        height: 40%;
+        width: 40%;
         margin: auto;
         justify-content: center;
         
@@ -46,3 +46,10 @@ body {
         margin: 0;
         padding: 0;
       }
+
+#videoDiv {
+    margin: 5%;
+    justify-content: center;
+    text-align: center;
+}
+

@@ -37,6 +37,9 @@ function getVideo() {
 
 //embed video
 function embedVideo(data) {
+  $("iframe").css("width", "400px");
+  $("iframe").css("height","400px");
+  $("iframe").css("position", "inherit");
   let frame = $('iframe').attr('src', 'https://www.youtube.com/embed/' + data.items[0].id.videoId)
   let videoTitle = $('h3').text(data.items[0].snippet.title)
   let description = $('.description').text(data.items[0].snippet.description)
