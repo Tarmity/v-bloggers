@@ -1,4 +1,6 @@
 const videoElement = $("#videoDiv");
+const videoTitleEl = $("#video-title");
+const videoDescriptionEl = $("#video-description");
 
 // when click on btn, user's geolocation will show up on page
 $(".btn").on("click", function getLocation() {
@@ -22,7 +24,7 @@ function getVideo() {
     type: 'GET',
     url: 'https://www.googleapis.com/youtube/v3/search',
     data: {
-        key: 'AIzaSyComYFtYUNS-PUesGzlGOhRZIuuy0usQSs',
+        key: 'AIzaSyDTEtZGNwwZVlfued52DoITn3dYAbsALJA',
         q: "cats",
         part: 'snippet',
         maxResults: 1,
@@ -44,10 +46,13 @@ function embedVideo(data) {
   $("iframe").css("height","400px");
   $("iframe").css("position", "inherit");
   let frame = $('iframe').attr('src', 'https://www.youtube.com/embed/' + data.items[0].id.videoId)
-  let videoTitle = $('h3').text(data.items[0].snippet.title)
-  let description = $('.description').text(data.items[0].snippet.description)
+  let videoTitle = $("<h4>").text(data.items[0].snippet.title)
+  console.log(data.items[0].snippet.title)
+  let description = $("<p>").text(data.items[0].snippet.description)
   console.log(data.items[0].snippet.description);
   videoElement.append(frame);
+  videoTitleEl.append(videoTitle);
+  videoDescriptionEl.append(description);
 }
 
 getVideo();
@@ -67,7 +72,7 @@ getVideo();
     map.addListener('click', function(mapsMouseEvent) {
       // Close the current InfoWindow.
       infoWindow.close();
-  
+
       // Create a new InfoWindow.
       infoWindow = new google.maps.InfoWindow({position: mapsMouseEvent.latLng});
       infoWindow.setContent(mapsMouseEvent.latLng.toString());
@@ -85,6 +90,5 @@ getVideo();
     $(".myLocation").empty();
     $("#inputLat").empty();
     $("#inputLon").empty();
-
   }
   
