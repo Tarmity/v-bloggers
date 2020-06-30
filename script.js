@@ -6,12 +6,13 @@ $(".btn").on("click", function getLocation() {
   })
   
   function showPosition(position) {
+     reset();
      console.log(position.coords);
      const lat = position.coords.latitude;
      const lon = position.coords.longitude;
-     $(".find-lat-lon-container").append("<p>" + "Latitude: " + lat + "<br>" + "Longitude: " + lon + "</p>");
+     $(".find-lat-lon-container").append("<p class='myLocation'>" + "Latitude: " + lat + "<br>" + "Longitude: " + lon + "</p>");
      $("#inputLat").val(lat);
-     $("#inputLon").val(lon);
+     $("#inputLon").val(lon); 
   }
   
 
@@ -72,5 +73,9 @@ getVideo();
       infoWindow.setContent(mapsMouseEvent.latLng.toString());
       infoWindow.open(map);
     });
+  }
+
+  function reset() {
+    $(".myLocation").empty();
   }
   
