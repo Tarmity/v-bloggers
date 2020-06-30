@@ -72,10 +72,19 @@ getVideo();
       infoWindow = new google.maps.InfoWindow({position: mapsMouseEvent.latLng});
       infoWindow.setContent(mapsMouseEvent.latLng.toString());
       infoWindow.open(map);
+      console.log(mapsMouseEvent.latLng.toString());
+      let mapLat = mapsMouseEvent.latLng.lat();
+      let mapLon = mapsMouseEvent.latLng.lng();
+      reset();
+      $("#inputLat").val(mapLat);
+      $("#inputLon").val(mapLon); 
     });
   }
 
   function reset() {
     $(".myLocation").empty();
+    $("#inputLat").empty();
+    $("#inputLon").empty();
+
   }
   
