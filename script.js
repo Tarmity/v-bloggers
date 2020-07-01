@@ -9,9 +9,10 @@ $(".btn").on("click", function getLocation() {
 
 function showPosition(position) {
   reset();
-  console.log(position.coords);
+ 
   const lat = position.coords.latitude;
   const lon = position.coords.longitude;
+
   $(".find-lat-lon-container").append("<p class='myLocation'>" + "Latitude: " + lat + "<br>" + "Longitude: " + lon + "</p>");
   $("#inputLat").val(lat);
   $("#inputLon").val(lon);
@@ -25,14 +26,14 @@ function embedVideo(data) {
 
   let frame = $('iframe').attr('src', 'https://www.youtube.com/embed/' + data.items[0].id.videoId);
   let videoTitle = $("<h4>").text(data.items[0].snippet.title);
-  console.log(data.items[0].snippet.title);
   let description = $("<p>").text(data.items[0].snippet.description);
-  console.log(data.items[0].snippet.description);
+
   videoElement.append(frame);
   videoTitleEl.append(videoTitle);
   videoDescriptionEl.append(description);
 }
 
+// Google Map function
 function initMap() {
   var myLatlng = {
     lat: -25.363,
@@ -63,10 +64,13 @@ function initMap() {
     });
     infoWindow.setContent(mapsMouseEvent.latLng.toString());
     infoWindow.open(map);
-    console.log(mapsMouseEvent.latLng.toString());
+    
+    // generate lat and lon and insert in input form
     let mapLat = mapsMouseEvent.latLng.lat();
     let mapLon = mapsMouseEvent.latLng.lng();
+
     reset();
+
     $("#inputLat").val(mapLat);
     $("#inputLon").val(mapLon);
   });
