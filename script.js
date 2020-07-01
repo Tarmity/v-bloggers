@@ -84,7 +84,7 @@ function reset() {
 
 // when the user clicked submit
 // computer will take the lat and lon in the input form 
-// and then generate 5 videos on the page
+// and then generate 5 videos on the page ---> *unfinished*
 $(".button").on("click", function findVideos() {
   // empty video title and description div
   $("#video-title").empty();
@@ -95,10 +95,10 @@ $(".button").on("click", function findVideos() {
   let lat = Math.ceil($("input#inputLat").val()).toString();
   let lon = Math.ceil($("input#inputLon").val()).toString();
 
-  // here we combine lat & lon into 1 string
+  // combine lat & lon into 1 string
   let myLocation = lat + "," + lon;
 
-  // converting select km into a string
+  // convert selected km into a string
   let myKm = ($("option").val()).toString();
 
   //When user inputs Geo location and request YouTube videos from that area.
