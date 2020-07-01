@@ -23,10 +23,10 @@ function embedVideo(data) {
   $("iframe").css("height", "400px");
   $("iframe").css("position", "inherit");
 
-  let frame = $('iframe').attr('src', 'https://www.youtube.com/embed/' + data.items[0].id.videoId)
-  let videoTitle = $("<h4>").text(data.items[0].snippet.title)
-  console.log(data.items[0].snippet.title)
-  let description = $("<p>").text(data.items[0].snippet.description)
+  let frame = $('iframe').attr('src', 'https://www.youtube.com/embed/' + data.items[0].id.videoId);
+  let videoTitle = $("<h4>").text(data.items[0].snippet.title);
+  console.log(data.items[0].snippet.title);
+  let description = $("<p>").text(data.items[0].snippet.description);
   console.log(data.items[0].snippet.description);
   videoElement.append(frame);
   videoTitleEl.append(videoTitle);
