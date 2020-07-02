@@ -4,12 +4,10 @@ body {
 
 .btn {
     margin: auto;
-    padding: 5px;
-    background-color: white;
-    color: lightseagreen;
+    padding: 10px;
+    background-color: lightseagreen;
+    color: white;
     border-radius: 5px;
-    font-size: 16px;
-    border: 2px solid lightseagreen;
 }
 
 .container {
@@ -22,64 +20,38 @@ body {
 
 .large-4 {
     justify-content: center;
-    text-align: center;
+    text-align: left;
 }
 
 .find-lat-lon-container {
-    width: 100%;
     margin: auto;
     padding: 20px;
     justify-content: center;
 }
 
-.top-bar {
-    justify-content: center;
-    background-color: lightseagreen;
-    height: 80px;
-    font-size: 28px;
-    color: white;
-}
-
-.button {
-    background-color: white;
-    color: lightseagreen;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 18px;
-    margin: auto;
-    border: 2px solid lightseagreen;
-    float: right;
-}
-
-.button:hover {
-    background-color: lightseagreen;
-    color: white;
-}
-
-
 /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
-
-#map {
-    height: 50%;
-    width: 60%;
-    margin: auto;
-    justify-content: center;
-}
-
-
-/* Optional: Makes the sample page fill the window. */
-
-html,
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
+       #map {
+        height: 40%;
+        width: 40%;
+        margin: auto;
+        justify-content: center;
+        
+      }
+      
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
 
 #videoDiv {
     margin: 5%;
     justify-content: center;
     text-align: center;
+    position: relative;
+    width: 400px;
+    height: 400px;
 }

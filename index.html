@@ -1,66 +1,85 @@
+  
 <!doctype html>
 
 <html class="no-js" lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search videos</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNMu1kms7xIhha83sa5s9dbYeQE3ebSJ4&callback=initMap&libraries=&v=weekly" defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation for Sites</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+    integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNMu1kms7xIhha83sa5s9dbYeQE3ebSJ4&callback=initMap&libraries=&v=weekly"
+    defer></script>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="top-bar">Search videos in your locality!</div>
+  <div class="top-bar">Search your video</div>
 
 
-    <div class="container">
-        <div class="input">
-            <div class="find-lat-lon-container">
-                <h4>Search the video on your locality by simply clicking on the button below to get your latitude and longitude. <br>You can select the radius to search the video. <button class="btn">Click here</button> to get your coordinates.</h4>
+  <div class="container">
+    <div class="input">
+      <div class="find-lat-lon-container">
+        <p>Click the button to get your coordinates.</p>
+        <button class="btn">Click here</button>
+      </div>
 
-            </div>
-            <div class="grid-x grid-padding-x">
-                <div class="large-2 cell">
-                    <label>LATITUDE</label>
-                    <input type="text" placeholder="Enter your Latitude" />
-                </div>
-
-                <div class="large-2 cell">
-                    <label>LONGITUDE</label>
-                    <input type="text" placeholder="Enter your Longitude" />
-                </div>
-
-                <div class="large-2 cell">
-                    <label>SELECT YOUR RADIUS</label>
-                    <select>
-            <option value="5km">5km</option>
-            <option value="10km">10km</option>
-            <option value="20km">20km</option>
-          </select>
-                </div>
-                <div class="large-2 cell">
-                    <button class="button">Submit</button>
-                </div>
-            </div>
-
+      <div class="grid-x grid-padding-x">
+        <div class="large-4 cell">
+          <label>Latitude</label>
+          <input id="inputLat" type="text" />
         </div>
 
+        <div class="large-4 cell">
+          <label>Longitude</label>
+          <input id="inputLon" type="text" />
+        </div>
+
+        <div class="large-4 cell">
+          <label>Select Box</label>
+          <select>
+            <option value="20km">20km</option>
+            <option value="50km">50km</option>
+            <option value="100km">100km</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid-x grid-padding-x">
+        <div class="large-4 medium-4 cell">
+          <h5>Submit here:</h5>
+          <p>
+            <a href="#" class="button">Submit</a><br />
+          </p>
+        </div>
+      </div>
 
 
     </div>
 
-    <div id="map">
-    </div>
+
+
+  </div>
+
+  <div id="map"></div>
+
+  <div id="video-content">
+    <div id="video-title"></div>
     <div id="videoDiv"></div>
+    <div id="video-description"></div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+    integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 
 
 
