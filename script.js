@@ -20,9 +20,9 @@ function showPosition(position) {
 
 //embed video
 function embedVideo(data) {
-  // $("iframe").css("width", "400px");
-  // $("iframe").css("height", "400px");
-  // $("iframe").css("position", "inherit");
+  $("iframe").css("width", "400px");
+  $("iframe").css("height", "400px");
+  $("iframe").css("position", "inherit");
 
   let frame = $('iframe').attr('src', 'https://www.youtube.com/embed/' + data.items[0].id.videoId);
   let videoTitle = $("<h4>").text(data.items[0].snippet.title);
@@ -107,7 +107,7 @@ $(".button").on("click", function findVideos() {
     type: 'GET',
     url: 'https://www.googleapis.com/youtube/v3/search',
     data: {
-      key: 'AIzaSyBjtjIY3nLYY65vNCNfI8DIbnkBbvs5THY',
+      key: 'chrisApiKey,
       // q: "cats",
       part: 'snippet',
       maxResults: 5,
