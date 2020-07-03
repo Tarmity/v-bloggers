@@ -20,17 +20,18 @@ function showPosition(position) {
 
 //embed video
 function embedVideo(data) {
-  $("iframe").css("width", "400px");
-  $("iframe").css("height", "400px");
-  $("iframe").css("position", "inherit");
+  $("#iframe1, #iframe2, #iframe3").css("width", "400px");
+  $("#iframe1, #iframe2, #iframe3").css("height", "400px");
+  $("#iframe1, #iframe2, #iframe3").css("position", "inherit");
 
-  let frame = $('iframe').attr('src', 'https://www.youtube.com/embed/' + data.items[0].id.videoId);
+  $('#iframe1').attr('src', 'https://www.youtube.com/embed/' + data.items[0].id.videoId);
+  $('#iframe2').attr('src', 'https://www.youtube.com/embed/' + data.items[1].id.videoId);
+  $('#iframe3').attr('src', 'https://www.youtube.com/embed/' + data.items[2].id.videoId);
   let videoTitle = $("<h4>").text(data.items[0].snippet.title);
   let description = $("<p>").text(data.items[0].snippet.description);
-
-  videoElement.append(frame);
+ 
   videoTitleEl.append(videoTitle);
-  videoDescriptionEl.append(description);
+  videoDescriptionEl.append(description)
 }
 
 // Google Map function
@@ -128,7 +129,7 @@ $(".button").on("click", function findVideos() {
     type: 'GET',
     url: 'https://www.googleapis.com/youtube/v3/search',
     data: {
-      key: 'AIzaSyCkXtbDd9oLKaoAHKrPiZkF3l4XBrTe27U',
+      key: 'AIzaSyDycTRQSGnsSR2Nzp45BqQQC1HAJZYtHVg',
       // q: "cats",
       part: 'snippet',
       maxResults: 5,
