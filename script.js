@@ -24,14 +24,23 @@ function embedVideo(data) {
   $("#iframe1, #iframe2, #iframe3").css("height", "400px");
   $("#iframe1, #iframe2, #iframe3").css("position", "inherit");
 
+  //for video 1
   $('#iframe1').attr('src', 'https://www.youtube.com/embed/' + data.items[0].id.videoId);
+  $("#vidTitle1").text(data.items[0].snippet.title);
+  $(".description1").text(data.items[0].snippet.description);
+
+  //for video 2
   $('#iframe2').attr('src', 'https://www.youtube.com/embed/' + data.items[1].id.videoId);
+  $("#vidTitle2").text(data.items[1].snippet.title);
+  $(".description2").text(data.items[1].snippet.description);
+
+  //for video 3
   $('#iframe3').attr('src', 'https://www.youtube.com/embed/' + data.items[2].id.videoId);
-  let videoTitle = $("<h4>").text(data.items[0].snippet.title);
-  let description = $("<p>").text(data.items[0].snippet.description);
+  $("#vidTitle3").text(data.items[2].snippet.title);
+  $(".description3").text(data.items[2].snippet.description);
  
-  videoTitleEl.append(videoTitle);
-  videoDescriptionEl.append(description)
+  //videoTitleEl.append(videoTitle1);
+  //videoDescriptionEl.append(description1)
 }
 
 // Google Map function

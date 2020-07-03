@@ -45,7 +45,7 @@ body {
     color: lightseagreen;
     padding: 15px 32px;
     text-align: center;
-    display: inline-block;
+    display: inline-block; 
     font-size: 18px;
     margin: auto;
     border: 2px solid lightseagreen;
@@ -84,6 +84,38 @@ body {
     text-align: center;
 }
 
-.container {
-    margin-top: 30px
+.videoContainer {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 30px;
+}
+
+#iframe1 {
+    padding: 40px 40px 40px 40px;
+    
+}
+
+#iframe2 {
+    padding: 40px 40px 40px 40px;
+}  
+
+
+#iframe3 {
+    padding: 40px 40px 40px 40px;
+}
+
+
+.vidTitle {
+    text-align: center;
+    padding: 10px 30px 10px 10px;
+    font-weight: bold;
+    color:lightseagreen;
+}
+
+#description {
+    text-align: center;
+    padding: 10px 30px 10px 10px;
 }
