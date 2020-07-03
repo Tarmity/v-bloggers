@@ -35,19 +35,19 @@ function embedVideo(data) {
 
 // Google Map function
 function initMap() {
-  var myLatlng = {
+  const myLatlng = {
     lat: -25.363,
     lng: 131.044
   };
 
-  var map = new google.maps.Map(
+  let map = new google.maps.Map(
     document.getElementById('map'), {
-      zoom: 4,
+      zoom: 12,
       center: myLatlng
     });
 
   // Create the initial InfoWindow.
-  var infoWindow = new google.maps.InfoWindow({
+  let infoWindow = new google.maps.InfoWindow({
     content: 'Click the map to get Lat/Lng!',
     position: myLatlng
   });
@@ -75,7 +75,28 @@ function initMap() {
     $("#inputLat").val(mapLat);
     $("#inputLon").val(mapLon);
   });
+
+  // find user location on Google map
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      var pos = {
+        lat: position.coords.latitude,
+        lng: position.coords.longitude
+      };
+
+      infoWindow.setPosition(pos);
+      infoWindow.setContent('You are here!');
+      // infoWindow.open(map);
+      map.setCenter(pos);
+    }, function() {
+      handleLocationError(true, infoWindow, map.getCenter());
+    });
+  } else {
+    // Browser doesn't support Geolocation
+    handleLocationError(false, infoWindow, map.getCenter());
+  }
 }
+
 
 function reset() {
   $(".myLocation").empty();
@@ -107,7 +128,7 @@ $(".button").on("click", function findVideos() {
     type: 'GET',
     url: 'https://www.googleapis.com/youtube/v3/search',
     data: {
-      key: 'chrisApiKey,
+      key: 'AIzaSyCkXtbDd9oLKaoAHKrPiZkF3l4XBrTe27U',
       // q: "cats",
       part: 'snippet',
       maxResults: 5,
