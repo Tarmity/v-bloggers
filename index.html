@@ -1,100 +1,37 @@
-  <!doctype html>
-
-<html class="no-js" lang="en">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Foundation for Sites</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
-    integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+     .logo {
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       width: 30%;
+     }
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNMu1kms7xIhha83sa5s9dbYeQE3ebSJ4&callback=initMap&libraries=&v=weekly"
-    defer></script>
-
-  <link rel="stylesheet" href="style.css">
+     .btn {
+        display: block;
+       margin-left: auto;
+       margin-right: auto;
+       width: 30%;
+       background-color: #8fe3d9;
+       color: black;
+       cursor: pointer;
+       padding: 16px 32px;  
+       border: #8fe3d9;
+       width: 350px;
+       font-weight: bold;
+       
+     }
+    </style>
+    <title>Document</title>
 </head>
-
 <body>
-  <div class="top-bar">Search your video</div>
-
-
-  <div class="container">
-    <div class="input">
-      <div class="find-lat-lon-container">
-        <p>Click the button to get your coordinates.</p>
-        <button class="btn">Click here</button>
-      </div>
-
-      <div class="grid-x grid-padding-x">
-        <div class="large-4 cell">
-          <label>Latitude</label>
-          <input id="inputLat" type="text" />
-        </div>
-
-        <div class="large-4 cell">
-          <label>Longitude</label>
-          <input id="inputLon" type="text" />
-        </div>
-
-        <div class="large-4 cell">
-          <label>Select Box</label>
-          <select>
-            <option value="20km">20km</option>
-            <option value="50km">50km</option>
-            <option value="100km">100km</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="grid-x grid-padding-x">
-        <div class="large-4 medium-4 cell">
-          <h5>Submit here:</h5>
-          <p>
-            <a href="#" class="button">Submit</a><br />
-          </p>
-        </div>
-      </div>
-
-
-    </div>
-
-
-
-  </div>
-
-  <div id="map"></div>
-
-<div class= "videoContainer">
-  <div>
-     <iframe id= "iframe1" src=""> </iframe>
-     <h5 id="vidTitle1" class ="vidTitle">Video Title</h5>
-     <p class="description1" id = "description">Video Description<p>
-  </div>
-  <div>
-     <iframe id= "iframe2" src=""></iframe>
-     <h5 id="vidTitle2" class ="vidTitle">Video Title</h5>
-     <p class="description2" id = "description">Video Description<p>
-  </div>
-  <div>
-     <iframe id= "iframe3" src=""></iframe>
-     <h5 id="vidTitle3" class ="vidTitle">Video Title</h5>
-     <p class="description3" id = "description">Video Description<p>
-  </div>
-</div>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
-    integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
-
-
-
+   
+    <img src="images/V-Bloggers around you.png" alt= "logo" class = "logo">
+    <button type ="button" class= "btn" onclick="document.location='content.html'">Click To Get Started</button>
+  
 </body>
-
 </html>
