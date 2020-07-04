@@ -49,7 +49,7 @@ function embedVideo(data) {
   //videoTitleEl.append(videoTitle1);
   //videoDescriptionEl.append(description1)
   } else {
-    // if there are repeated videos, clear videoDivs and run embedVideo funtion again
+    // if there are repeated videos, clear videoDivs and run embedVideo function again
     resetVideo();
     embedVideo(data);
   }

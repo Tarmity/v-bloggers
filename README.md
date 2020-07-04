@@ -4,7 +4,7 @@
 
 This repository is where we developed and collaborated "V-Bloggers Around You" product. Not only do we work on code and issues here, We also publish the latested updates and functions. This source code is available to everyone under the Free Software Foundation, Inc. https//fsf.org/.
 
-![V-Bloggers around you](https://user-images.githubusercontent.com/38900138/86507405-49d03e00-be1b-11ea-9f28-54654c33f4fc.png)
+![img](./images/logo.png)
 
 ## Table of Contents (Optional)
 
@@ -25,13 +25,13 @@ There are no installation guide as it is a woking web page that you go too.(NEED
 To do a search on "V-Bloggers Around You" simply open the link (NEED TO ADD THE LINK ONCE IT IS LIVE) which will bring you to the home page.
 Once you are on the home page click the button to get started, it will bring up the search page which will look like the one below:
 
-![content page](https://user-images.githubusercontent.com/38900138/86507455-aa5f7b00-be1b-11ea-92f6-520d8b96bed7.png)
+![img](./images/searchPage.png)
 
 
 Once you are on the search page there will be a prompted from the site asking for permission to Know you Location as picutered below. 
 Once you have entered your location or have used the map to pin point a area you desire then hit the summit button to bring up your V-Bloggers in that area.
 
-![Videos](https://user-images.githubusercontent.com/38900138/86507478-dc70dd00-be1b-11ea-9c41-ab1ca6bdb53f.png)
+![img](./images/loadedVideos.png)
 
 ## Credits
 
