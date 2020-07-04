@@ -90,7 +90,7 @@ function initMap() {
     // generate lat and lon and insert in input form
     let mapLat = mapsMouseEvent.latLng.lat();
     let mapLon = mapsMouseEvent.latLng.lng();
-    console.log(mapLat);
+    // console.log(mapLat);
 
     reset();
 
