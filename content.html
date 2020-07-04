@@ -24,68 +24,77 @@
   <div class="top-bar">Search Videos Around You</div>
 
 
-  <div class="container">
-    <div class="input">
-      <div class="find-lat-lon-container">
-        <p>Click the button to get your coordinates</p>
-        <p>Or click on the map to get any coordinates.</p>
-        <button class="btn">Click here to get your coordinates</button>
-      </div>
-
-      <div class="grid-x grid-padding-x">
-        <div class="large-4 cell">
-          <label>Latitude</label>
-          <input id="inputLat" type="text" />
+  <div class="grid-container">
+    <div class="grid-x">
+      <div class="cell small-6">
+      <div class="input">
+        <div class="find-lat-lon-container">
+          <p>Click the button to get your coordinates</p>
+          <p>Or click on the map to get any coordinates.</p>
+          <button class="btn">Click here to get your coordinates</button>
         </div>
 
-        <div class="large-4 cell">
+        <!-- <div class="grid-x grid-padding-x">
+          <div class="small-2 cell"> -->
+            <label>Latitude</label>
+            <input id="inputLat" type="text" />
+        
+
+        <!-- <div class="small-2 cell"> -->
           <label>Longitude</label>
           <input id="inputLon" type="text" />
-        </div>
+        
 
-        <div class="large-4 cell">
-          <label>Select Radius</label>
+        <!-- <div class="small-2 cell"> -->
+          <label>Radius</label>
           <select>
             <option value="20km">20km</option>
             <option value="50km">50km</option>
             <option value="100km">100km</option>
           </select>
-        </div>
-      </div>
+        
+    
 
-      <div class="grid-x grid-padding-x">
-        <div class="large-4 medium-4 cell" id="submit-here">
+      <!-- <div class="grid-x grid-padding-x"> -->
+        <div id="submit-here">
             <button class="button">Submit</button>
         </div>
+      
       </div>
+      </div>
+  
 
 
-    </div>
-
-
-
-  </div>
-
-  <div id="map"></div>
-
-<div class= "videoContainer">
-  <div>
-     <iframe id= "iframe1" src=""> </iframe>
-     <h5 id="vidTitle1" class ="vidTitle"></h5>
-     <p class="description1" id = "description"><p>
-  </div>
-  <div>
-     <iframe id= "iframe2" src=""></iframe>
-     <h5 id="vidTitle2" class ="vidTitle"></h5>
-     <p class="description2" id = "description"><p>
-  </div>
-  <div>
-     <iframe id= "iframe3" src=""></iframe>
-     <h5 id="vidTitle3" class ="vidTitle"></h5>
-     <p class="description3" id = "description"><p>
-  </div>
+    <div class="cell small-6">
+    <div id="map"></div>
+ </div>
+  
 </div>
 
+
+
+  <div class="grid-x">
+    <div class="cell">
+      <div class= "videoContainer">
+        <div>
+            <iframe id= "iframe1" src=""> </iframe>
+            <h5 id="vidTitle1" class ="vidTitle"></h5>
+           <p class="description1" id = "description"><p>
+        </div>
+        <div>
+          <iframe id= "iframe2" src=""></iframe>
+          <h5 id="vidTitle2" class ="vidTitle"></h5>
+          <p class="description2" id = "description"><p>
+        </div>
+        <div>
+       <iframe id= "iframe3" src=""></iframe>
+        <h5 id="vidTitle3" class ="vidTitle"></h5>
+        <p class="description3" id = "description"><p>
+        </div>
+      </div>
+    </div>
+   </div>
+</div>
 
   <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
     integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
