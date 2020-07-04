@@ -2,7 +2,15 @@ body {
     margin: 0;
 }
 
-.btn {
+p {
+    margin: auto;
+    padding: 15px;
+    justify-content: center;
+    text-align: center;
+}
+
+button.btn {
+    display: block;
     margin: auto;
     padding: 5px;
     background-color: white;
@@ -10,6 +18,9 @@ body {
     border-radius: 5px;
     font-size: 16px;
     border: 2px solid lightseagreen;
+    justify-content: center;
+    text-align: center;
+    position: relative;
 }
 
 .container {
@@ -32,6 +43,7 @@ body {
     justify-content: center;
 }
 
+
 .top-bar {
     justify-content: center;
     background-color: lightseagreen;
@@ -49,12 +61,17 @@ body {
     font-size: 18px;
     margin: auto;
     border: 2px solid lightseagreen;
-    float: right;
 }
 
 .button:hover {
     background-color: lightseagreen;
     color: white;
+}
+
+#submit-here {
+    display: block;
+    justify-content: center;
+    text-align: center;
 }
 
 
