@@ -35,10 +35,7 @@ Once you have entered your location or have used the map to pin point a area you
 
 ## Credits
 
-Tarmity Flassman, Melody Lo, Christopher Natale, Tripti
-Google Maps 
-YouTube
-Canva 
+Tarmity Flassman, Melody Lo, Christopher Natale, Tripti, Google Maps, YouTube, Canva. 
 
 ## License
 
