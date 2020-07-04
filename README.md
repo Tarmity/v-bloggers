@@ -31,7 +31,7 @@ Once you are on the home page click the button to get started, it will bring up 
 Once you are on the search page there will be a prompted from the site asking for permission to Know you Location as picutered below. 
 Once you have entered your location or have used the map to pin point a area you desire then hit the summit button to bring up your V-Bloggers in that area.
 
-{insert full loaded page}
+![Videos](https://user-images.githubusercontent.com/38900138/86507478-dc70dd00-be1b-11ea-9c41-ab1ca6bdb53f.png)
 
 ## Credits
 
