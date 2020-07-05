@@ -4,7 +4,7 @@
 
 This repository is where we developed and collaborated "V-Bloggers Around You" product. Not only do we work on code and issues here, We also publish the latested updates and functions. This source code is available to everyone under the Free Software Foundation, Inc. https//fsf.org/.
 
-![img](./images/logo.png)
+![img](./images/landingPage.png)
 
 ## Table of Contents (Optional)
 
