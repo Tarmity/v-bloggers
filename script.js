@@ -150,7 +150,7 @@ $(".button").on("click", function findVideos() {
     type: 'GET',
     url: 'https://www.googleapis.com/youtube/v3/search',
     data: {
-      key: 'AIzaSyDNMu1kms7xIhha83sa5s9dbYeQE3ebSJ4',
+      key: 'AIzaSyDycTRQSGnsSR2Nzp45BqQQC1HAJZYtHVg',
       // q: "cats",
       part: 'snippet',
       maxResults: 20,
