@@ -76,6 +76,10 @@ button.btn:hover {
     color: white;
 }
 
+.button::after {
+    background-color: lightseagreen;
+}
+
 
 div#submit-here {
     display: block;
@@ -147,4 +151,10 @@ body {
 #description {
     text-align: center;
     padding: 10px 30px 10px 10px;
+}
+
+.logo-container {
+    display: block;
+    justify-content: center;
+    text-align: center;
 }
