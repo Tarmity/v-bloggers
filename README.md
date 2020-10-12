@@ -18,12 +18,12 @@ This repository is where we developed and collaborated "V-Bloggers Around You" p
 
 ## Installation
 
-There are no installation guide as it is a woking web page that you go too.(https://tarmity.github.io/Project-1/) 
+There are no installation guide as it is a woking web page that you go too.(https://tarmity.github.io/v-bloggers/) 
 
 
 ## Usage 
 
-To do a search on "V-Bloggers Around You" simply open the link (https://tarmity.github.io/Project-1/) which will bring you to the home page.
+To do a search on "V-Bloggers Around You" simply open the link (https://tarmity.github.io/v-bloggers/) which will bring you to the home page.
 Once you are on the home page click the button to get started, it will bring up the search page which will look like the one below:
 
 ![img](./images/contentPage.png)
